@@ -1,7 +1,7 @@
-from BarcodeReader import BarcodeRead
+from BarcodeReader import BarcodeReader
 
 def main():
-    bc = BarcodeRead("./test_images/plain_barcodes/barcode1.png")
+    bc = BarcodeReader.BarcodeReader("./test_images/p/pbarcode1.jpg", 7)
     print(bc.readBarcodeString())
 
 if __name__ == '__main__':
